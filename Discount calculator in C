@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+
+float price=0;
+float final_price=0;
+printf("Enter a price: ");
+scanf("%f",&price);
+
+
+if(price>=500 && price<=1000){
+    final_price=price*0.9;
+    printf("You get a discount of 10 percent!\n");
+    printf("The Final price is: %.2f\n",final_price);
+}
+else if(price>1000){
+    final_price=price*0.8;
+    printf("You get a 20 percent discount!\n");
+    printf("The Final price is:$%.2f\n",final_price);
+}
+else{
+    final_price=price;
+    printf("You get no discount for this price!\n");
+    printf("The Final price is: %.2f\n",final_price);
+}
+
+return 0;
+}
