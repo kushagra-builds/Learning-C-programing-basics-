@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main(){
+
+int a=0;
+int b=0;
+int opr;
+int z;
+printf("Enter a: ");
+scanf("%d",&a);
+printf("Enter b: ");
+scanf("%d",&b);
+
+printf("Choose a case(1-4): ");
+scanf("%d",&opr);
+
+switch(opr){
+    case 1:
+    z=a+b;
+    printf("The Addition gives: %d\n",z);
+    break;
+
+    case 2:
+    z=a-b;
+    printf("The Substraction gives: %d\n",z);
+    break;
+
+    case 3:
+    z=a*b;
+    printf("The Multiplication gives: %d\n",z);
+    break;
+
+    case 4:
+    if(b!=0){
+        z=a/b;
+        printf("The Division gives: %d\n",z);
+        break;
+    }
+    else{
+        printf("Division by zero is not allowed!\n");
+        break;
+    }
+
+    default:
+    printf("You entered an invalid choice!\n");
+
+}
+
+return 0;
+}
