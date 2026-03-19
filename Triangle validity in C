@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main(){
+
+int angle1=0;
+int angle2=0;
+int angle3=0;
+int sum;
+
+printf("Enter angle 1:");
+scanf("%d",&angle1);
+
+printf("Enter angle 2:");
+scanf("%d",&angle2);
+
+printf("Enter angle 3:");
+scanf("%d",&angle3);
+
+sum = angle1 + angle2 + angle3;
+
+if(angle1>0 && angle2>0 && angle3>0 && sum==180){
+
+    printf("It is a valid triangle!\n");
+    printf("It has formed 180 degrees!\n");
+
+    if(angle1 == angle2 && angle2 == angle3){
+        printf("It is an equilateral triangle!\n");
+    }
+    else if(angle1 == angle2 || angle2 == angle3 || angle3 == angle1){
+        printf("It is an isosceles triangle!\n");
+    }
+    else{
+        printf("It is a scalene triangle!\n");
+        printf("None of the sides are equal to each other!\n");
+    }
+
+}
+else{
+    printf("It is an invalid triangle!\n");
+    printf("As it does not add up to 180 degrees!\n");
+}
+
+return 0;
+}
