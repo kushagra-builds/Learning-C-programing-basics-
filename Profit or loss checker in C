@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+
+float cost_price=0.0;
+float sell_price=0.0;
+printf("Enter Cost price: ");
+scanf("%f",&cost_price);
+printf("Enter sell price: ");
+scanf("%f",&sell_price);
+
+if(sell_price>cost_price){
+    printf("You made profit boss!");
+}
+else if(sell_price==cost_price){
+    printf("You neither made profit nor loss!");
+}
+else{
+    printf("You made loss boss!");
+}
+return 0;
+
+}
