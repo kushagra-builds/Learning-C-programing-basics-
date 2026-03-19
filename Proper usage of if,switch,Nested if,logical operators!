@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main(){
+
+int a=0;
+int b=0;
+int c=0;
+printf("Enter a: ");
+scanf("%d",&a);
+printf("Enter b: ");
+scanf("%d",&b);
+printf("Enter c: ");
+scanf("%d",&c);
+
+if(a==b && b==c){
+    printf("A,B and C are all equal!\n");
+    printf("Therefore none of them are greater!\n");
+}
+else if(a==b && b>c){
+    printf("A and B are both greater than C\n");
+}
+else if(a==c && c>b){
+    printf("A and C are greater than B!\n");
+}
+else if(b==c && c>a){
+    printf("B and C are greater than A!\n");
+}
+
+else if(a>=b && a>=c){
+    printf("%d is greater than %d and %d\n",a,b,c);
+    printf("Therefore a is greater than both!\n");
+}
+else if(b>=a && b>=c){
+    printf("%d is greater than %d and %d\n",b,a,c);
+    printf("Therefore b is greater than both!\n");
+}
+else{
+    printf("%d is greater than %d and %d\n",c,a,b);
+    printf("Therefore c is greater than both!\n");
+}
+
+return 0;
+}
